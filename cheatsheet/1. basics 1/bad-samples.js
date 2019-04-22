@@ -1,0 +1,1 @@
+var badValue = 666;

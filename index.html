@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Mój nowy blog</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Lato, sans-serif;
+		}
+
+		nav {
+			background-color: yellowgreen;
+			-ms-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-moz-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-o-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			position: relative;
+			z-index: 1;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav ul li {
+			width: 25%;
+			float: left;
+			background-color: aliceblue;
+			text-align: center;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			font-size: 22px;
+		}
+
+		nav ul li:hover {
+			padding: 10px 20px;
+			border: 2px dashed black;
+		}
+
+		main {
+			width: 80%;
+			float: left;
+			height: 1000px;
+			background-color: antiquewhite;
+			padding: 50px 200px 50px 50px;
+			box-sizing: border-box;
+			position: relative;
+		}
+
+		#sections-wrapper {
+			width: 20%;
+			float: left;
+			box-sizing: border-box;
+			-ms-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-moz-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-o-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			background-color: white;
+		}
+
+		section {
+			padding: 50px;
+		}
+
+		#newsletter {
+			height: 200px;
+			background-color: royalblue;
+		}
+
+		#reviews {
+			height: 300px;
+			background-color: salmon;
+		}
+
+		footer {
+			width: 100%;
+			float: left;
+			background-color: aquamarine;
+		}
+		aside {
+			background-color: #f0f0f0;
+			position: absolute;
+			top: 150px;
+			right: -10px;
+			width: 160px;
+			padding: 20px;
+			-ms-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-moz-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			-o-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.55);
+			z-index: -1;
+		}
+
+		main,
+		#newsletter,
+		nav,
+		#reviews,
+		footer,
+		nav ul li {
+			background-color: transparent;
+		}
+
+
+		/*.post {
+			!*background-image: url(wallpaper.jpg);
+			background-size: cover;
+			background-position: center;*!
+			background-color: #f003
+		}
+
+		.post .first-header {
+			color: #00f;
+		}
+
+		.post h1 {
+			color: red;
+			text-decoration: underline overline;
+			text-decoration: underline;
+			text-decoration: overline;
+		}
+
+		p {
+			text-align: justify;
+		}
+
+		p span {
+			text-decoration: underline;
+		}
+
+		p:first-of-type {
+			font-variant: small-caps;
+		}
+
+		ul {
+			list-style-type: '-';
+			list-style-position: inside;
+		}
+
+		ol {
+			list-style-position: outside;
+		}
+
+		.form {
+			font-size: 0;
+		}
+
+		.form h2 {
+			font-size: 24px;
+		}
+
+		.form h3 {
+			font-size: 20px;
+		}
+
+		.form form {
+			font-size: 16px;
+		}
+
+		p.styled {
+			background-color: #0000ff33;
+			!*margin-top: 20px;
+			margin-left: 150px;
+			margin-right: 50px;
+			margin-bottom: 100px;*!
+			margin: 0;
+			padding: 100px 150px 20px 50px;
+			background-origin: padding-box;
+			background-image: url(wallpaper.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			border-radius: 25px;
+		}
+
+		.styled-wrapper {
+			margin: 20px 50px 100px 150px;
+			border-color: cyan;
+			border-width: 5px;
+			border-style: dashed;
+			border-radius: 30px;
+		}*/
+	</style>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li>Strona główna</li>
+			<li>Aktualności</li>
+			<li>Kontakt</li>
+			<li>Dojazd do nas</li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<aside>
+		<h5>Czy wiesz, że...?</h5>
+		<p>12 kwietnia 2019 była 57 rocznica pierwszego lotu w kosmos?</p>
+	</aside>
+	<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Nazywał się od kogoś, co dzień za kolana). On za domem urządzał
+		wieczerzę. Rykow jadł smaczno, mało w domu przyszłą urządza zabawę. Dał rozkaz ekonomom, wójtom i znowu w ciąg
+		powieści, pytań wykrzykników i ukazach licznyc sprawa wróciła znowu je wicher rozerwie i wzgląd na miejscu sobie
+		jak pożar na wsi długo wzbronionej swobody. Wiedział, że tytuły przychodzą z kieszeni która się wkoło są
+		siedzeniem dziewic na kogoś okiem, daleko, na siano. w tylu szlachty, w słów kilka wyrzekł, do zamku sień
+		wielka, jeszcze przez płotki, przez Niemen rzekł: Do zobaczenia! tak nazywano młodzieńca, który go.</p>
+
+	<p>Był dawniej było przeznaczono, by nie dostrzegł, nazbyt rychło znikła ale razem ja sam nie postanie! Nazywam się
+		dawniej zdały. I też nie bijem, jest bez grzeczności i smuci, i wznosi chmurę pyłu. dalej mówił: Grzeczność nie
+		zarzuci, bym uchybił gospodarskiej, ważnej powinności udał się jak kochał pana Tadeusza wsparła się w kielni
+		siedziały dwa kruki jednym z powozu. konie porzucone same szczypiąc trawę ciągnęły powoli pod strażą. Dziś
+		piękność twą w pół kroku Tak każe u Woźnego lepiej zna równie pędzel, noty, druki. Aż osłupiał Tadeusz
+		Telimenie, Asesor zaś Gotem. Dość, że w porządku pilnował. Bo nie decyduj i stąd się po kryjomu kazał stoły z
+		tych imion wywabi pamięć droga do dworu gazetę im hojnie dano jako osóbki, które już zjechał z krzykiem
+		podróżnego barwą spłonęła rumian jak refektarz, z nowych powitań. Gdy się.</p>
+
+	<p>Tak każe u wieczerzy na partyję Kusego bez urzędu. ogon też Sokoła ci jak przystało drugich wiek, urodzenie,
+		cnoty, obyczaje swe osadzał. Dziwna rzecz! Miejsca wkoło pali. Nawet tak na koniu jeździł, pieszo do stołu
+		przywoławszy dwie twarze w lisa, tak były rączki, co pod lasem zwaliska. Po wielu latach pierwszy raz wraz
+		skrzypi i pannom służyło. Sędzia, z tabakiery waży w końcu z Paryża a młodzież na nim leży Fedon i widok obław
+		przypominał mu jego postać tylko aż człowiekiem zrobił. W końcu, stawiła przed dziesięciu laty. Wchodzi, cofnął
+		się, spójrzał, lecz podmurowany. Świeciły się kołem. W biegu dotknęła blisko dwadzieści i wieś i mniej trudnych
+		i dam nie po zadzwonieniu na Tadeusza, widać, że posiadłość tam ma.</p>
+</main>
+<div id="sections-wrapper">
+	<section id="newsletter">
+		<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było ogrodniczki. Tylko smutno, że tytuły przychodzą
+			z kim była i panny, i kobiety żniwo oglądaj pod strażą. Dziś piękność.</p>
+	</section>
+	<section id="reviews">
+		<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było ogrodniczki. Tylko smutno, że tytuły przychodzą
+			z kim była i panny, i kobiety żniwo oglądaj pod strażą. Dziś piękność.</p>
+	</section>
+</div>
+<footer>
+	<table>
+		<tr>
+			<td>NIP:</td>
+			<td>9562318019</td>
+		</tr>
+		<tr>
+			<td>REGON:</td>
+			<td>123456789</td>
+		</tr>
+		<tr>
+			<td>KRS:</td>
+			<td>0000123456</td>
+		</tr>
+	</table>
+	<h6>Copyleft 2019 Emil Mickiewicz</h6>
+</footer>
+
+
+<!--
+<div class="post">
+	<h1 class="first-header">Pierwszy wpis</h1>
+	<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit. <i>Aliquam mattis massa</i> vitae efficitur
+		pharetra. Vivamus sit amet risus nec dolor efficitur elementum. Suspendisse potenti. Phasellus ultrices
+		venenatis ipsum, et semper mauris ultrices nec. Nunc non pulvinar dui, quis pulvinar risus. Curabitur sagittis
+		facilisis justo id congue. Nunc non iaculis turpis. Nam iaculis magna finibus tempor pretium. Quisque aliquet
+		metus in mauris facilisis iaculis. </p>
+	<h2>Dolor sit amet</h2>
+	<h2>Aliquam mattis</h2>
+	<div class="styled-wrapper">
+		<p class="styled">Mauris ut quam sed eros <b>hendrerit rhoncus</b> ut eget enim. Praesent tempus suscipit nibh nec semper. Ut&#x2011;vitae&#x2011;pellentesque arcu, sed condimentum nibh. Duis at imperdiet ante. Nam sit amet metus diam. Curabitur ipsum dolor,
+			pharetra a congue vel, convallis sit amet diam. Morbi quis pulvinar magna, in pretium libero. Nam vitae faucibus
+			magna, et sodales odio. Sed malesuada id ante in semper. In blandit nec lorem fermentum sollicitudin. Duis in
+			sagittis ex, id tempor ex. Aliquam rutrum gravida posuere. </p>
+	</div>
+	<ul>
+		<li>Lorem</li>
+		<li>Ipsum</li>
+		<li>Dolor</li>
+		<li>Sit</li>
+	</ul>
+	<ol>
+		<li>Lorem<br>
+			<ul>
+				<li>Lorem</li>
+				<li>Ipsum</li>
+				<li>Dolor</li>
+				<li>Sit</li>
+			</ul>
+		</li>
+		<li>Ipsum</li>
+		<li>
+			<b>
+				<i>Dolor</i>
+			</b>
+		</li>
+		<li>Sit</li>
+	</ol>
+</div>
+<div id="customer-blacklist">
+	<h2>Klienci, których nie będziemy więcej obsługiwać</h2>
+	<table>
+		<thead>
+		<tr>
+			<th colspan="3">Dane osobowe</th>
+			<th colspan="4">Dane adresowe</th>
+		</tr>
+		<tr>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Wiek</th>
+			<th>Adres</th>
+			<th>Kod pocztowy</th>
+			<th>Miasto</th>
+			<th>Państwo</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td rowspan="2">Emil</td>
+			<td rowspan="2">Mickiewicz</td>
+			<td rowspan="2">28</td>
+			<td>Włocławska 167</td>
+			<td>87-100</td>
+			<td>Toruń</td>
+			<td rowspan="3">Polska</td>
+		</tr>
+		<tr>
+			<td>Lubelska 22</td>
+			<td>21-100</td>
+			<td>Lubartów</td>
+		</tr>
+		<tr>
+			<td>Jan</td>
+			<td>Kowalski</td>
+			<td>34</td>
+			<td>Mickiewicza 13</td>
+			<td>00-001</td>
+			<td>Warszawa</td>
+		</tr>
+		<tr>
+			<td>Krzysztof</td>
+			<td>Nowak</td>
+			<td>41</td>
+			<td>Mickiewicza 122</td>
+			<td>12-123</td>
+			<td>Londyn</td>
+			<td>Wielka Brytania</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Wiek</th>
+			<th>Adres</th>
+			<th>Kod pocztowy</th>
+			<th>Miasto</th>
+			<th>Państwo</th>
+		</tr>
+		<tr>
+			<th colspan="3">Dane osobowe</th>
+			<th colspan="4">Dane adresowe</th>
+		</tr>
+		</tfoot>
+	</table>
+</div>
+<aside>
+	<div class="form">
+		<h2>Zapisz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;się na nasz bliżej nieokreślony formularz</h2>
+		<h3>RODO nie ma zastosowania.</h3>
+		<form method="POST" action="/register">
+			<div>
+				<label for="login-input2">Login</label>
+				<input id="login-input2" name="login" placeholder="Podaj swój login"> </!-- type="text" --/>
+			</div>
+			<div>
+				<label>Wrzuć swój avatar</label>
+				<input type="file">
+			</div>
+			<div>
+				<label>Podaj hasło</label>
+				<input type="password">
+			</div>
+			<div>
+				<label>Podaj swój wiek</label>
+				<input type="number" name="age" placeholder="Podaj swój wiek" value="28">
+			</div>
+			<div>
+				<label>Podaj swój email</label>
+				<input type="email" name="email" value="user@example.com" readonly>
+			</div>
+			<div>
+				<label>Czy chcesz się zapisać na newsletter?</label>
+				<input type="checkbox" name="newsletter" checked>
+			</div>
+			<div>
+				<label>Jakiej jesteś płci?</label>
+			</div>
+			<div>
+				<input type="radio" name="gender" value="male">
+				<label>Mężczyzna</label>
+			</div>
+			<div>
+				<input type="radio" name="gender" value="female">
+				<label>Kobieta</label>
+			</div>
+			<div>
+				<input type="radio" name="gender" value="dontknow" disabled>
+				<label>Jeszcze nie wiem</label>
+			</div>
+			<input type="hidden" value="cantseeme">
+			<div>
+				<label>Data urodzenia</label>
+				<input type="datetime-local">
+			</div>
+			<div>
+				<label>Biografia</label>
+				<textarea name="bigtext" placeholder="To jest placeholder">Lorem ipsum</textarea>
+			</div>
+			<div>
+				<label>Czy chcesz...?</label>
+				<select name="doyouwant">
+					<option value="yes">Tak</option>
+					<option value="no">Nie</option>
+				</select>
+			</div>
+			<div>
+				<input type="submit" value="Wyślij">
+				<button type="button">Tylko przycisk</button>
+				<button>Wyślij formularz</button> </!-- type="submit" --/>
+				<button type="reset">Zresetuj</button>
+			</div>
+		</form>
+	</div>
+	<div class="form">
+		<h2>Nowy formularz</h2>
+		<form method="POST" action="/register">
+			<table>
+				<tr>
+					<td><label for="login-input">Login</label></td>
+					<td><input id="login-input" name="login" placeholder="Podaj swój login"></td>
+				</tr>
+				<tr>
+					<td><label for="password-input">Hasło</label></td>
+					<td><input id="password-input" type="password" name="password" placeholder="Podaj swoje hasło"></td>
+				</tr>
+				<tr>
+					<td>
+						<button type="reset">Zresetuj</button>
+					</td>
+					<td>
+						<button>Wyślij formularz</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</aside>
+<section id="multimedia-samples">
+	<audio controls>
+		<source src="http://www.noiseaddicts.com/samples_1w72b820/4246.mp3" type="audio/mpeg">
+		Twoja przeglądarka nie wspiera tagu audio.
+	</audio>
+	<video width="320" height="240" controls>
+		<source
+			src="https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+			type="video/mp4"
+		>
+		Twoja przeglądarka nie wspiera tagu video.
+	</video>
+</section>
+-->
+</body>
+</html>

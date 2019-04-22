@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Warsztaty z JavaScript</title>
+	<link rel="stylesheet" href="global.css">
+</head>
+<body>
+<div> <!-- from 9 -->
+	<select id="filter-field">
+		<option value="id">ID</option>
+		<option value="name">Imię</option>
+		<option value="surname">Nazwisko</option>
+	</select>
+	<select id="filter-type">
+		<option value="higher-than" class="numeric">Większe niż</option>
+		<option value="lower-than" class="numeric">Mniejsze niż</option>
+		<option value="equal" class="numeric alphabetical">Równe</option>
+		<option value="equal"  data-subtype="contrary" class="numeric alphabetical">Różne od</option>
+		<option value="contains" class="alphabetical">Zawiera</option>
+		<option value="contains" data-subtype="contrary" class="alphabetical">Nie zawiera</option>
+	</select>
+	<input id="filter-value" placeholder="Podaj filtr">
+	<button id="filter-accept">Zastosuj</button>
+</div>
+<div>  <!-- from 8 -->
+	<select id="sort-select">
+		<option value="id" data-direction="ascending">Po identyfikatorze, rosnąco</option>
+		<option value="id" data-direction="descending">Po identyfikatorze, malejąco</option>
+		<option value="name" data-direction="ascending">Po imieniu, rosnąco</option>
+		<option value="name" data-direction="descending">Po imieniu, malejąco</option>
+		<option value="surname" data-direction="ascending">Po nazwisku, rosnąco</option>
+		<option value="surname" data-direction="descending">Po nazwisku, malejąco</option>
+	</select>
+</div>
+<table>
+	<thead>
+	<tr>
+		<th data-value="id">ID</th>
+		<th data-value="name">Imię</th>
+		<th data-value="surname">Nazwisko</th>
+	</tr>
+	</thead>
+	<tbody id="user-list"></tbody>
+</table>
+<div id="pagination"></div> <!-- from 7 -->
+<script src="jquery-3.3.1.js"></script>
+<script src="scripts/1-data.js"></script>
+<script src="scripts/2-filtration.js"></script>
+<script src="scripts/3-sorting.js"></script>
+<script src="scripts/4-pagination.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Warsztaty z JavaScript</title>
+</head>
+<body>
+<select id="filter-field">
+	<option value="id">ID</option>
+	<option value="name">Imię</option>
+	<option value="surname">Nazwisko</option>
+</select>
+<select id="filter-type">
+	<option value="higher-than" class="numeric">Większe niż</option>
+	<option value="lower-than" class="numeric">Mniejsze niż</option>
+	<option value="equal" class="numeric alphabetical">Równe</option>
+	<option value="not-equal" class="numeric alphabetical">Różne od</option>
+	<option value="contains" class="alphabetical">Zawiera</option>
+	<option value="not-contains" class="alphabetical">Nie zawiera</option>
+</select>
+<input id="filter-value" placeholder="Podaj filtr">
+<button id="filter-accept">Zastosuj</button>
+<table>
+	<thead>
+	<tr>
+		<th data-value="id">ID</th>
+		<th data-value="name">Imię</th>
+		<th data-value="surname">Nazwisko</th>
+	</tr>
+	</thead>
+	<tbody id="user-list"></tbody>
+</table>
+<script src="jquery-3.3.1.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

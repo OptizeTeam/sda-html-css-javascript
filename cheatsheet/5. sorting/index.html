@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Warsztaty z JavaScript</title>
+	<style>
+		th::after {
+			content: ' ^v';
+		}
+
+		.sorted-ascending::after {
+			content: ' ^';
+		}
+
+		.sorted-descending::after {
+			content: ' v';
+		}
+
+		.last-sorted {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+<select id="sort-select">
+	<option value="id" data-direction="ascending">Po identyfikatorze, rosnąco</option>
+	<option value="id" data-direction="descending">Po identyfikatorze, malejąco</option>
+	<option value="name" data-direction="ascending">Po imieniu, rosnąco</option>
+	<option value="name" data-direction="descending">Po imieniu, malejąco</option>
+	<option value="surname" data-direction="ascending">Po nazwisku, rosnąco</option>
+	<option value="surname" data-direction="descending">Po nazwisku, malejąco</option>
+</select>
+<table>
+	<thead>
+	<tr>
+		<th data-value="id">ID</th>
+		<th data-value="name">Imię</th>
+		<th data-value="surname">Nazwisko</th>
+	</tr>
+	</thead>
+	<tbody id="user-list"></tbody>
+</table>
+<script src="jquery-3.3.1.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

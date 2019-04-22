@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Warsztaty z JavaScript</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>Lorem ipsum dolor sit amet...</p>
+<!--
+	Skrypty należy dołączać tuż przed znacznikiem zamykającym tag 'body'. Dzięki
+	takiemu zabiegowi unikniemy przykrych niespodzianek w postaci nieodnalezionego
+	elementu drzewa DOM.
+	Tylko niektóre skrypty należy dołączać w tagu 'head' lub na początku
+	tagu 'body', np. skrypt Google Tag Manager.
+-->
+<!--
+	Takie dołączenie skryptu jest dozwolone tylko w określonych przypadkach,
+	np. w celu przekazania zmiennej z PHP do Twiga, a następnie do JavaScriptu.
+-->
+<script>
+	/*
+		Zmienne deklarujemy za pomocą słowa kluczowego 'var', w tym przypadku
+		przypisujemy zmiennej liczbę całkowitą za pomocą operatora przypisania '='.
+		Zalecane jest stosowanie cammelCase'ów do nadawania nazw zmiennym.
+
+		Tu mamy również przykład komentarza wieloliniowego.
+	 */
+	var importantVariableFromBackend = 42;
+</script>
+<!-- Skrypty w większości przypadków dołączamy jako zewnętrzne pliki. -->
+<script src="script.js"></script>
+<script src="bad-samples.js"></script>
+</body>
+</html>
